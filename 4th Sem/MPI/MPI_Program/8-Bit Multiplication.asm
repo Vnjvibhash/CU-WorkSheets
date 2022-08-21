@@ -1,0 +1,14 @@
+# ORG 0900H
+	   LDA 1000
+	   MOV B,A
+	   LDA 1001
+	   MOV C,A
+	   MVI A, 00H
+
+LOOP:	   ADD C
+	   DCR B
+	   JNZ LOOP
+	   STA 1002
+	   HLT
+# ORG 1000
+# DB 03H, 06H

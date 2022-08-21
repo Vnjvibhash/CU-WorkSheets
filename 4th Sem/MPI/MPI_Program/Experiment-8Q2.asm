@@ -1,0 +1,9 @@
+# ORG 0900H
+	   LDA 1000
+	   MOV B,A
+	   LDA 1001
+	   ANA B
+	   STA 1002
+	   HLT
+# ORG 1000
+# DB D7H,0FH

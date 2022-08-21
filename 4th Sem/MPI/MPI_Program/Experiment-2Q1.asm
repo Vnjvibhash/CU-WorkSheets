@@ -1,0 +1,26 @@
+# ORG 2000H
+	   LHLD 3000
+	   XCHG
+	   LHLD 3002
+	   MOV A,E
+	   ADD L
+	   MOV L,A
+	   MOV A,D
+	   ADD H
+	   MOV H,A
+	   SHLD 1004
+	   HLT
+# ORG 3000H
+# DB 12, 11, 11, 12
+
+
+
+# ORG 2000H
+	   LHLD 3000
+	   XCHG
+	   LHLD 3002
+	   DAD D
+	   SHLD 3004
+	   HLT
+# ORG 3000H
+# DB 12,42,99,12

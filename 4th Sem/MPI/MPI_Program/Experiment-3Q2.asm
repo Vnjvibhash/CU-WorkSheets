@@ -1,0 +1,14 @@
+# ORG 2000H
+	   LHLD 3000
+	   XCHG
+	   LHLD 3002
+	   MOV A,E
+	   SUB L
+	   MOV L,A
+	   MOV A,D
+	   SBB H
+	   MOV H,A
+	   SHLD 1004
+	   HLT
+# ORG 3000H
+# DB 42, 35,34,21

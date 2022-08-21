@@ -1,0 +1,18 @@
+# ORG 0900H
+	   LXI H,1000
+	   MOV C,M
+	   INX H
+	   MOV A,M
+	   DCR C
+
+LOOP:	   INX H
+	   CMP M
+	   JC LABEL
+	   MOV A,M
+
+LABEL:	   DCR C
+	   JNZ LOOP
+	   STA 2000
+	   HLT
+# ORG 1000
+# DB 06H,09H,F6H,09H,D5H,02H,10H

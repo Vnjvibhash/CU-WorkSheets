@@ -1,0 +1,9 @@
+# ORG 1000H
+	   LDA 2000
+//RLC
+	   STC
+	   RAL
+	   STA 2001
+	   HLT
+# ORG 2000H
+# DB 55

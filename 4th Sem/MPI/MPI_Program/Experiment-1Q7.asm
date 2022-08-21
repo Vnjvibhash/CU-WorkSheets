@@ -1,0 +1,15 @@
+# ORG 3000H
+	   LHLD 3001
+	   XCHG
+	   LHLD 3004
+	   MVI C,00
+	   DAD D
+	   JNC LABEL
+	   INR C
+	   MOV A,C
+	   STA 3006
+
+LABEL:	   SHLD 3004
+	   HLT
+# ORG 3001H
+# DB 13,31,12,10

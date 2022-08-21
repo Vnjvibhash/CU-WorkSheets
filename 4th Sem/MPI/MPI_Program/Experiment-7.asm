@@ -1,0 +1,8 @@
+# ORG 1000H
+	   LHLD 2000
+	   DAD H
+	   DAD H
+	   SHLD 2002
+	   HLT
+# ORG 2000
+# DB 96H,75H

@@ -1,0 +1,9 @@
+# ORG 1000H
+	   LDA 2000
+	   CMA
+	   STA 2001
+	   ADI 01
+	   STA 2002
+	   HLT
+# ORG 2000H
+# DB 55
