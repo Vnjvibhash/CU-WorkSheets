@@ -3,7 +3,6 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class Employee {
-
   String empId;
   String depName;
   String empDesignation;
