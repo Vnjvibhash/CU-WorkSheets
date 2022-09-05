@@ -159,8 +159,7 @@ public class InterestCalculator {
         Scanner sc = new Scanner(System.in);
         while(val) {
         	System.out.println("SELECT THE OPTIONS " + "\n1." + " Interest Calculator-SB" + " \n2." + " Interest Calculator-FD" + "\n3." + " InterestCalculator-RD" + "\n4 " + " Exit");
-            int choice = sc.nextInt();
-            
+            int choice = sc.nextInt();            
             switch (choice) {
                 case 1:
                     SBaccount sb = new SBaccount();
@@ -173,7 +172,6 @@ public class InterestCalculator {
                         System.out.println("Exception : Invalid amount");
                     }
                     break;
-
                 case 2:
                     try {
                         FDaccount fd = new FDaccount();
@@ -187,9 +185,7 @@ public class InterestCalculator {
 
                     } catch (InvalidDaysException e) {
                         System.out.println("Invalid Days Entered");
-
                     }
-
                     break;
                 case 3:
                     try {
@@ -206,9 +202,7 @@ public class InterestCalculator {
                     } catch (InvalidMonthsException e) {
                         System.out.println("Invalid Days Entered");
                     }
-
                     break;
-
                 case 4:
                 	val=false;
                     System.out.println("DO YOU WANT TO CALCULATE AGAIN ????" + " "
