@@ -151,7 +151,7 @@ class SBaccount extends Account {
     }
 }
 
-public class IntrestCAlculator {
+public class InterestCalculator {
 
     public static void main(String[] args) {
         boolean val=true;
