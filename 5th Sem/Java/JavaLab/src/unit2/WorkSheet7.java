@@ -37,11 +37,9 @@ public class WorkSheet7 {
 
 	static void display(ArrayList<Employee> al) {
 		System.out.println("\n--------------Employee List---------------\n");
-		System.out
-				.println(String.format("%-10s%-15s%-10s%-20s%-10s", "ID", "Name", "salary", "contact-no", "Email-Id"));
+		System.out.println(String.format("%-10s%-15s%-10s%-20s%-10s", "ID", "Name", "salary", "contact-no", "Email-Id"));
 		for (Employee e : al) {
-			System.out.println(
-					String.format("%-10s%-15s%-10s%-15s%-10s", e.id, e.name, e.salary, e.contact_no, e.email_id));
+			System.out.println(String.format("%-10s%-15s%-10s%-15s%-10s", e.id, e.name, e.salary, e.contact_no, e.email_id));
 		}
 	}
 

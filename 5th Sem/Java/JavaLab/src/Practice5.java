@@ -1,7 +1,10 @@
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 import java.util.Scanner;
 public class Practice5 {
-	static ArrayList<String> obj = new ArrayList<String>();
+	static List obj = new ArrayList<String>();
+	static List obj1 = new ArrayList<String>();
 	static Scanner in = new Scanner(System.in);
 	static Integer itemCount;
 	static String item;
@@ -16,6 +19,7 @@ public class Practice5 {
 		System.out.println("Given List items are: ");
 		for(int i=0;i<obj.size();i++)
 			System.out.println(obj.get(i));
+		
 	}
 
 }
